@@ -18,7 +18,7 @@ namespace LoginWithCertified
             //A list of path and password of some cetificate in you pc.
             List<CertInfo> certifiedList = new List<CertInfo>()
             {
-                new CertInfo(){Path = @"Firth Certicate.pfx", Password = "br018726"},
+                new CertInfo(){Path = @"Firth Certicate.pfx", Password = "123"},
                 new CertInfo(){Path = "Second", Password = "123"},
                 new CertInfo(){Path = "And Carry on", Password = "123"}
             };
