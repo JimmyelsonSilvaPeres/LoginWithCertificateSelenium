@@ -18,11 +18,9 @@ You can just fallow the IngussNeilands´s tutorial <a href="https://gist.github.
   <li>If a registry with name "1" was created now you can run the aplication, else you need to change de name of registry to "1" or change the parameter of method Registry.LocalMachine.OpenSubKey().SetValue() in the application to the name of your created registry.</li>
 </ol>
 <h2 ><strong>How to rewrite the Chrome Configure Json</strong></h2>
-Ok, now a will give a brief explanation of how do you rewriten the Chrome Config Json. 
-In "pattern" key the value need to be the url that the certificate will be send, in the most cases the url is the same url of the page, but some sites don´t use the same url base to send the certificate, for example when I was trying to webscraping the NFS-e in Uberlandi city I need to debug the script of the page to find the url that the certificate was send.
-The "filter" key will have the certificate information. In my case I need to access the same site with diferents certificates, so I fill the json with the information of "ISSUER" and "SUBJECT". Chrome will choose one certificate that match the informations content in the filter key. For example if you write only the "CN" in the "ISSUER" object with "SERASA Certificadora Digital v5" and you have more the one certificate with this info Chrome won´t be able to choose the certificate.
-If you pass for all the steps now you can run teh application.
-Don´t forget to fill the "List<string> certifiedList" with you path and password of all the certificates that you have instaled.
-  
-
-
+<p>Ok, now a will give a brief explanation of how do you rewriten the Chrome Config Json.</p>
+<p>In "pattern" key the value need to be the url that the certificate will be send, in the most cases the url is the same url of the page, but some sites don´t use the same url base to send the certificate, for example when I was trying to webscraping the NFS-e in Uberlandi city I need to debug the script of the page to find the url that the certificate was send.</p>
+<p>The "filter" key will have the certificate information. In my case I need to access the same site with diferents certificates, so I fill the json with the information of "ISSUER" and "SUBJECT". Chrome will choose one certificate that match the informations content in the filter key. For example if you write only the "CN" in the "ISSUER" object with "SERASA Certificadora Digital v5" and you have more the one certificate with this info Chrome won´t be able to choose the certificate.</p>
+<p>If you pass for all the steps now you can run teh application.</p>
+<p>Don´t forget to fill the "List<string> certifiedList" with you path and password of all the certificates that you have instaled.</p>
+ 
