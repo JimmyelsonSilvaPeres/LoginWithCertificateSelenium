@@ -43,4 +43,4 @@ You can follow the steps on IngussNeilands´s tutorial <a href="https://gist.git
 For example, when I was trying to <i>webscraping</i> the NFS-e in Uberlândia city I needed to debug the script of the page to find the URL to where the certificate was sent.</p>
 <p>The "filter" key will have the certificate information. In my case, I need to access the same website with diferent certificates, for that I'll have to fill the JSON with the information of "ISSUER" and "SUBJECT". Chrome will choose one certificate that matches with the informations content in the filter key. For example, if I fill the "CN" from "ISSUER" object with "SERASA Certificadora Digital v5" I'll have more than one certificate with these informations and Chrome won´t be able to choose the right certificate.</p>
 <p>If you went through all these steps, you can now probably run your application.</p>
-<p>Don´t forget to fill the "List&ltstring&gtDcertifiedList" with the path and the password of all the certificates that you have installed.</p>
+<p>Don´t forget to fill the "List&ltstring&gtcertifiedList" with the path and the password of all the certificates that you have installed.</p>
